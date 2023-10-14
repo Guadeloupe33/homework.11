@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Notes</title>
+    <link rel="stylesheet" type="text/css" href="/styles.css">
+</head>
+<body>
+    <h1>Notes</h1>
+    <div class="notes-list">
+        <ul id="notes-list">
+            <!-- Existing notes will be displayed here -->
+        </ul>
+    </div>
+    <div class="note-form">
+        <h2>Create a New Note</h2>
+        <form id="note-form">
+            <input type="text" id="note-title" placeholder="Note Title" required>
+            <textarea id="note-text" placeholder="Note Text" required></textarea>
+            <button id="save-note">Save Note</button>
+            <button type="button" id="clear-form">Clear Form</button>
+        </form>
+    </div>
+
+    <script src="/scripts.js"></script>
+</body>
+</html>
