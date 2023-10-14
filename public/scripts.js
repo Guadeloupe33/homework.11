@@ -22,3 +22,27 @@ document.addEventListener("DOMContentLoaded", () => {
             displayNoteDetails(e.target);
         }
     });
+    clearForm.addEventListener("click", () => {
+        clearNoteForm();
+    });
+
+    function addNoteToList(title, text) {
+        const li = document.createElement("li");
+        li.textContent = title;
+        notesList.appendChild(li);
+
+        const notes = JSON.parse(localStorage.getItem("notes")) || [];
+        notes.push({ title, text });
+        localStorage.setItem("notes", JSON.stringify(notes));
+    }
+
+    function displayNoteDetails(noteElement) {
+        const notes = JSON.parse(localStorage.getItem("notes")) || [];
+        const index = Array.from(notesList.children).indexOf(noteElement);
+        const note = notes[index];
+
+        if (note) {
+            noteTitle.value = note.title;
+            noteText.value = note.text;
+        }
+    }
