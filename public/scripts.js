@@ -46,3 +46,14 @@ document.addEventListener("DOMContentLoaded", () => {
             noteText.value = note.text;
         }
     }
+    function clearNoteForm() {
+        noteTitle.value = "";
+        noteText.value = "";
+    }
+
+    // Load existing notes from local storage
+    const savedNotes = JSON.parse(localStorage.getItem("notes")) || [];
+    savedNotes.forEach((note) => {
+        addNoteToList(note.title, note.text);
+    });
+});
