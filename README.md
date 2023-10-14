@@ -1,5 +1,6 @@
 # homework.11
 
+<img src= Develop/public/assets/picture/homework 11.jpg>
 
 This is a simple note-taking web application built with Node.js, HTML, CSS, and JavaScript. It allows users to create, view, and save notes.
 
