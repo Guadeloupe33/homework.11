@@ -8,3 +8,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
     noteForm.addEventListener("submit", (e) => {
         e.preventDefault();
+        const title = noteTitle.value;
+        const text = noteText.value;
+
+        if (title && text) {
+            addNoteToList(title, text);
+            clearNoteForm();
+        }
+    });
+
+    notesList.addEventListener("click", (e) => {
+        if (e.target.tagName === "LI") {
+            displayNoteDetails(e.target);
+        }
+    });
