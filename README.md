@@ -80,9 +80,7 @@ We welcome contributions from the community. If you would like to contribute to 
 
 This project is licensed under the [MIT License](LICENSE) - see the [LICENSE](LICENSE) file for details.
 
-## Contact
 
-For any questions or inquiries about this project, you can reach out to [Your Name] at [Your Email Address].
 
 Thank you for using the Small Business Note-Taker! We hope it simplifies note-taking and organization for your business needs.
 
